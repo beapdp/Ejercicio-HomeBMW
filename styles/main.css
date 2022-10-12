@@ -1,0 +1,252 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu4WekmuqFu9pDpIwemjLx90Rxz3q3ytQW7g&usqp=CAU);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.menuForm{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+
+}
+.menuForm::after{
+    content: "";
+    background-color:darkgray;
+    position: absolute;
+    top: 80%;
+    right: 25%;
+    width: 80%;
+    height: 2px;
+}
+.menuForm span{
+    color: aliceblue;
+}
+nav{
+    margin-top: 15px;
+}
+.menu_items{
+    display: none;
+}
+form{
+    margin-top: 15px;
+}
+form button{
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 5px;
+}
+.logo{
+    width: 50px;
+}
+.tittles{
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+h2{
+    font-size: 12px;
+    padding: 5px;
+}
+.discoverBmw{
+    text-decoration: none;
+    background-color:cornflowerblue;
+    color:white;
+    padding: 5px 30px 5px 30px;
+    font-size: 10px;
+}
+.mainFirstDiv{
+    margin: 60px 40px 30px 40px;
+}
+.mainFirstDiv_tittle{
+    color: darkgray;
+}
+.mainFirstDiv_menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.typeBmw{
+    list-style: none;
+    padding: 5px;
+}
+.typeBmw a{
+    text-decoration: none;
+    color: darkgrey;
+    position: relative;
+}
+.typeBmw a:hover{
+    text-decoration: underline 2px gainsboro;
+}
+.sectionBmw{
+    margin-top: 50px;
+}
+.sectionBmw_article p{
+    color: darkgray;
+}
+.aContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.aContainer a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+.aContainer a::before{
+    content: "> ";
+}
+.mainSecondDiv{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.mainSecondDiv_section
+{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+.mainSecondDiv_section img{
+    width: 150px;
+    height: 75px;
+}
+.mainSecondDiv_section-article{
+    border: solid 1px gainsboro;
+    padding: 2px;
+}
+.mainSecondDiv_section-article h3{
+    padding: 3px;
+}
+.mainSecondDiv_section-article p{
+    font-size: 11px;
+    margin: 3px;
+}
+.mainSecondDiv_section-article a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+.mainSecondDiv_section-article a::before{
+    content: ">";
+}
+.mainThirdSection{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+.mainThirdSection_article{
+    border: 1px solid gainsboro;
+    padding: 4px;
+    margin: 4px;
+}
+.mainThirdSection_article a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+.mainThirdSection_article a::before{
+    content: ">";
+}
+.mainFourthSection{
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+.mainFourthSection_containers{
+    background-color:  rgb(197, 201, 207);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.mainFourthSection_containers a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+footer{
+    background-color: rgb(197, 201, 207);
+}
+.footerContainer{
+    margin-right: 10px;
+    margin-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.tittleLi{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.footerContainer li{
+    font-size: 9px;
+    list-style: none;
+}
+@media screen and (min-width: 768px){
+    .tittles{
+        margin-top: 300px;
+        margin-left: 40px;
+        padding: 20px;
+    }
+    nav{
+        display: flex;
+    }
+    nav span{
+        /*quise poner display:none y no se por qué no me lo pillaba asi que al final lo apañé así*/
+        visibility: hidden;
+    }
+    .menu_items{
+        display: inline;
+        padding: 10px;
+    }
+    .menu_items a{
+        text-decoration: none;
+        color: white;
+    }
+    .menuForm::after{
+        content: "";
+        background-color:darkgray;
+        position: absolute;
+        top: 80%;
+        right: 13%;
+        width: 80%;
+        height: 2px;
+    }
+    .mainFirstDiv_menu{
+        width: 100%;
+        display: flex;
+        gap: 20px;
+    }
+    .sectionBmw{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-left: 80px;
+    }
+    .mainSecondDiv_section{
+        display: flex;
+    }
+    .mainSecondDiv_section-article{
+        padding: 10px;
+    }
+    .mainSecondDiv_section-article img{
+        width: 100%;
+    }
+    .mainThirdSection{
+        display: flex;
+        justify-content: center;
+    }
+}
